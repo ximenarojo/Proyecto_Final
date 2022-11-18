@@ -6,18 +6,18 @@ import numpy as np
 import altair as alt
 import urllib.request
 import base64
+from PIL import Image
 
-
-st.title('Contaminantes del aire en Lima Metropolitana')
+st.title('Datos Hidrometereológicos Gobierno Regional Piura')
 
 st.markdown("""
-	Esta app exploratoria permite visualizar los datos de contaminantes del aire en Lima Metropolitana
+	Esta pagina web "app" exploratoria permite visualizar a cualquier usuario los datos hidrometereológicos del Gobierno Regional de Piura
 	* **Librerías Python:** altair, pandas, streamlit, base64
 	* **Base de datos:** [Servicio Nacional de Meteorología e Hidrología del Perú - SENAMHI] (https://www.datosabiertos.gob.pe/dataset/datos-horarios-de-contanimantes-del-aire-en-lima-metropolitana-servicio-nacional-de).
 	""")
 
 from PIL import Image
-image = Image.open('contaminacion.jpeg')
+image = Image.open('Proyecto_Piura.jpg')
 st.image(image, caption='La contaminación por el parque automotor antiguo es un problema en Lima Metropolitana', use_column_width=True)
 
 st.sidebar.header("Entradas del usuario")
