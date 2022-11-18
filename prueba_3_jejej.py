@@ -38,7 +38,7 @@ st.markdown("""
 
 from PIL import Image
 image = Image.open('Proyecto_Piura.jpg')
-st.image(image, caption='La contaminación por el parque automotor antiguo es un problema en Lima Metropolitana', use_column_width=True)
+st.image(image, caption='Piura: Gobierno regional pone a disposición información hidrometeorológica del sistema hidráulico Chira - Piura', use_column_width=True)
 
 st.sidebar.header("Entradas del usuario")
 selected_year=st.sidebar.selectbox('Año', list(reversed(range(2010,2021))))
