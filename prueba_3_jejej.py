@@ -45,3 +45,8 @@ st.image(image, caption='  ', use_column_width=True)
 
 st.sidebar.header("Entradas del usuario")
 selected_year=st.sidebar.selectbox('Año', list(reversed(range(2010,2021))))
+
+
+st.header("Datos Hidrometereológicos Gobierno Regional Piura")
+st.markdown("""Este dataset muestra los datos hidrometereológicos registrados de las presas, estaciones hidrológicas e hidrométricas.""")
+
