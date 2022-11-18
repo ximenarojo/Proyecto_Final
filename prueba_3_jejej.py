@@ -55,6 +55,11 @@ def download_data():
    df=pd.read_csv('DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv')
    return df
 c=download_data()
+st.write('Dimensiones: ' + str(c.shape[0]) + ' filas y ' + str(c.shape[1]) + ' columnas')
+st.dataframe(c)
+st.subheader("Características del Dataset")
+st.write(c.describe())
+
 url="https://www.datosabiertos.gob.pe/sites/default/files/DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv"
 filename="DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv"
 urllib.request.urlretrieve(url,filename)
