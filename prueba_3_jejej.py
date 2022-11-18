@@ -39,7 +39,7 @@ st.image(image, caption='Piura: Gobierno regional pone a disposición informaci�
 
 st.markdown(""" **Datos Hidrometeorológicos** """)
 
-image = Image.open('crear_mapa.jpg')
+image = Image.open('Proyecto_Piura.jpg')
 
 
 st.sidebar.header("Entradas del usuario")
