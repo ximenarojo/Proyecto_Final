@@ -9,5 +9,5 @@ import gdown
 import os
 from opencage.geocoder import OpenCageGeocode
 
-DataUbigeos = pd.read_csv('https://cloud.minsa.gob.pe/s/GkfcJD8xKHJeCqn/download')
+DataUbigeos = pd.read_csv('ubigeos-completos.csv')
 DataUbigeos
