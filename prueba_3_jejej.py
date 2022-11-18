@@ -41,8 +41,12 @@ image = Image.open('crear_mapa.jpg')
 st.image(image, caption='  ', use_column_width=True)
 
 
-st.sidebar.header("Entradas del usuario")
-selected_prov=st.sidebar.selectbox('Provincia', list(reversed(range(2010,2021))))
+
+
+###st.sidebar.header("Entradas del usuario")
+###selected_prov=st.sidebar.selectbox('Provincia', list(reversed(range(2010,2021))))
+
+
 
 
 st.header("Datos Hidrometereológicos Gobierno Regional Piura")
