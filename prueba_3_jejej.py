@@ -54,7 +54,7 @@ def download_data():
    urllib.request.urlretrieve(url,filename)
    df=pd.read_csv('DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv')
    return df
-
+c=download_data()
 url="https://www.datosabiertos.gob.pe/sites/default/files/DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv"
 filename="DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv"
 urllib.request.urlretrieve(url,filename)
