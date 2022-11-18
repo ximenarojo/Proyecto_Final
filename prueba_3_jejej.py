@@ -26,9 +26,9 @@ st.markdown("""
 	* **Dato y Medio de Distribución:**
 	""")
 
-st.markdown("""https://www.datosabiertos.gob.pe/dataset/datos-hidrometereol%C3%B3gicos-gobierno-regional-piura/resource/897966b9-f582-4898-83fe""")
-st.markdown("""https://www.datosabiertos.gob.pe/dataset/datos-hidrometereol%C3%B3gicos-gobierno-regional-piura/resource/454e8897-4e25-486e-8291""")
-st.markdown("""https://www.datosabiertos.gob.pe/dataset/datos-hidrometereol%C3%B3gicos-gobierno-regional-piura/resource/d7437ef6-8950-4c25-bc91""")
+st.markdown("""* https://www.datosabiertos.gob.pe/dataset/datos-hidrometereol%C3%B3gicos-gobierno-regional-piura/resource/897966b9-f582-4898-83fe""")
+st.markdown("""* https://www.datosabiertos.gob.pe/dataset/datos-hidrometereol%C3%B3gicos-gobierno-regional-piura/resource/454e8897-4e25-486e-8291""")
+st.markdown("""* https://www.datosabiertos.gob.pe/dataset/datos-hidrometereol%C3%B3gicos-gobierno-regional-piura/resource/d7437ef6-8950-4c25-bc91""")
 
 st.markdown("""
 	* **Para mayor información también puede ingresar a:** http://servicios.regionpiura.gob.pe/datosh
@@ -37,7 +37,7 @@ st.markdown("""
 image = Image.open('Proyecto_Piura.jpg')
 st.image(image, caption='Piura: Gobierno regional pone a disposición información hidrometeorológica del sistema hidráulico Chira - Piura', use_column_width=True)
 
-st.markdown(""" **Datos Hidrometeorológicos** """)
+st.header(""Datos Hidrometeorológicos"")
 
 image = Image.open('crear_mapa.jpg')
 st.image(image, caption='  ', use_column_width=True)
