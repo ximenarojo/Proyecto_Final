@@ -28,4 +28,4 @@ st.image(image, caption='La contaminación por el parque automotor antiguo es un
 st.sidebar.header("Entradas del usuario")
 selected_year=st.sidebar.selectbox('Año', list(reversed(range(2010,2021))))
 
-st.header("Dataset SENAMHI")
+
