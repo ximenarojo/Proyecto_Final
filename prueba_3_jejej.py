@@ -37,7 +37,7 @@ st.markdown("""
 image = Image.open('Proyecto_Piura.jpg')
 st.image(image, caption='Piura: Gobierno regional pone a disposición información hidrometeorológica del sistema hidráulico Chira - Piura', use_column_width=True)
 
-st.header(""Datos Hidrometeorológicos"")
+st.markdown("""""**Datos Hidrometeorológicos**""")
 
 image = Image.open('crear_mapa.jpg')
 st.image(image, caption='  ', use_column_width=True)
