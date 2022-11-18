@@ -42,7 +42,7 @@ st.image(image, caption='  ', use_column_width=True)
 
 
 st.sidebar.header("Entradas del usuario")
-selected_prov=st.sidebar.selectbox('Provincia', list(reversed(range(Piura, Ayabaca, Huancabamba, Morropón, Paita, Piura, Sechura, Sullana,Talara))))
+selected_prov=st.sidebar.selectbox('Provincia', list(reversed(range('Piura', "Ayabaca", "Huancabamba", "Morropón", "Paita", "Piura", "Sechura", "Sullana,Talara"))))
 
 
 st.header("Datos Hidrometereológicos Gobierno Regional Piura")
