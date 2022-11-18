@@ -12,6 +12,11 @@ st.title('Datos Hidrometereológicos Gobierno Regional Piura')
 
 st.markdown("""Esta pagina web "app" exploratoria permite visualizar a cualquier usuario los datos hidrometereológicos del Gobierno Regional de Piura""")
 
+st.header('Nosotras')
+st.markdown("##") # Linea en blanco
+st.caption('Somos un grupo de estudiantes cursando el 5to ciclo de la carrera de Ingeniería Ambiental en la Universidad Peruana Cayetano Heredia. Como proyecto final del curso “Programación Avanzada”, hemos creado esta página en base a los conocimientos adquiridos de las clases teóricas y prácticas a lo largo del ciclo, junto a la asesoría de nuestros profesores.')
+st.markdown("##") # Linea en blanco
+
 st.header('Agua y saneamiento')
 st.markdown("""
 	Contiene los datos Hidrometeorológicos del Sistema Hidráulico Mayor a cargo del  Proyecto Especial Chira Piura.
