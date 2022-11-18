@@ -12,9 +12,7 @@ st.title('Datos Hidrometereológicos Gobierno Regional Piura')
 
 st.markdown("""Esta pagina web "app" exploratoria permite visualizar a cualquier usuario los datos hidrometereológicos del Gobierno Regional de Piura""")
 
-st.markdown("""
-	* **Agua y Saneamiento:**
-	""")
+st.markdown("""* **Agua y Saneamiento:**""")
 st.markdown("""
 	Contiene los datos Hidrometeorológicos del Sistema Hidráulico Mayor a cargo del  Proyecto Especial Chira Piura.
         Este dataset muestra los datos hidrometereológicos registrados de las presas, estaciones hidrológicas e hidrométricas.
@@ -36,9 +34,10 @@ st.markdown("""
 	* **Para mayor información también puede ingresar a:** http://servicios.regionpiura.gob.pe/datosh
 	""")
 
-from PIL import Image
 image = Image.open('Proyecto_Piura.jpg')
 st.image(image, caption='Piura: Gobierno regional pone a disposición información hidrometeorológica del sistema hidráulico Chira - Piura', use_column_width=True)
+
+st.markdown(""" **Datos Hidrometeorológicos** """)
 
 st.sidebar.header("Entradas del usuario")
 selected_year=st.sidebar.selectbox('Año', list(reversed(range(2010,2021))))
