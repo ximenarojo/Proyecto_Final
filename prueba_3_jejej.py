@@ -39,5 +39,8 @@ st.image(image, caption='Piura: Gobierno regional pone a disposición informaci�
 
 st.markdown(""" **Datos Hidrometeorológicos** """)
 
+image = Image.open('crea_mapa.jpg')
+
+
 st.sidebar.header("Entradas del usuario")
 selected_year=st.sidebar.selectbox('Año', list(reversed(range(2010,2021))))
