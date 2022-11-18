@@ -42,7 +42,7 @@ st.image(image, caption='  ', use_column_width=True)
 
 
 st.sidebar.header("Entradas del usuario")
-selected_year=st.sidebar.selectbox('Año', list(reversed(range(2010,2021))))
+selected_prov=st.sidebar.selectbox('Provincia', list(reversed(range(Piura, Ayabaca, Huancabamba, Morropón, Paita, Piura, Sechura, Sullana,Talara))))
 
 
 st.header("Datos Hidrometereológicos Gobierno Regional Piura")
@@ -59,10 +59,5 @@ st.write('Dimensiones: ' + str(c.shape[0]) + ' filas y ' + str(c.shape[1]) + ' c
 st.dataframe(c)
 st.subheader("Características del Dataset")
 st.write(c.describe())
-
-url="https://www.datosabiertos.gob.pe/sites/default/files/DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv"
-filename="DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv"
-urllib.request.urlretrieve(url,filename)
-pd.read_csv('DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv')
 
 
