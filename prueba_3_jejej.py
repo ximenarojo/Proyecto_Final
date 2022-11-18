@@ -48,3 +48,8 @@ selected_year=st.sidebar.selectbox('Año', list(reversed(range(2010,2021))))
 st.header("Datos Hidrometereológicos Gobierno Regional Piura")
 st.markdown("""Este dataset muestra los datos hidrometereológicos registrados de las presas, estaciones hidrológicas e hidrométricas.""")
 
+url="https://www.datosabiertos.gob.pe/sites/default/files/DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv"
+filename="DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv"
+urllib.request.urlretrieve(url,filename)
+pd.read_csv('DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv')
+
