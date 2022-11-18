@@ -19,7 +19,7 @@ st.markdown("""
 	   adquiridos en las clases teóricas y prácticas durante del ciclo, junto a la asesoría y enseñansas de nuestros profesores, Fonse <3.
 	   """) 
 image = Image.open('tenorio el papi.jpg')
-st.image(image, caption='Piura: Gobierno regional pone a disposición información hidrometeorológica del sistema hidráulico Chira - Piura', use_column_width=True)
+st.image(image, caption='Futuros Ingenieros Ambientales', use_column_width=True)
 
 st.header('Agua y saneamiento')
 st.markdown("""
