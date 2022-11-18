@@ -10,9 +10,12 @@ from PIL import Image
 
 st.title('Datos Hidrometereológicos Gobierno Regional Piura')
 
+st.markdown("""Esta pagina web "app" exploratoria permite visualizar a cualquier usuario los datos hidrometereológicos del Gobierno Regional de Piura""")
+
 st.markdown("""
-	Esta pagina web "app" exploratoria permite visualizar a cualquier usuario los datos hidrometereológicos del Gobierno Regional de Piura
-	* **Agua y Saneamiento** : como lo siguiente
+	* **Agua y Saneamiento:**
+	""")
+st.markdown("""
 	Contiene los datos Hidrometeorológicos del Sistema Hidráulico Mayor a cargo del  Proyecto Especial Chira Piura.
         Este dataset muestra los datos hidrometereológicos registrados de las presas, estaciones hidrológicas e hidrométricas.
         Esta información contiene el nombre de la cuenca, nombre de la estación, medida del caudal a las 007:00 horas, el promedio del caudal a las 
@@ -20,8 +23,8 @@ st.markdown("""
 	de las presas a las 07:00 y precipitaciones.La cuenca es una extensión de terreno en un valle, escurren aguas formando un río atravesando valles 
 	y escurriendo en el mar. Una cuenca puede tener varias estaciones hidrometeorológicas.El dato de precipitación es la lluvia acumulada entre las 
 	7:00 horas del día anterior y las 7:00 horas de hoy (24 horas), cuando se considera el campo vacío, indica que no se realizaron mediciones.
-	* **Para mayor información también puede ingresar a** : http://servicios.regionpiura.gob.pe/datosh
 	""")
+
 
 from PIL import Image
 image = Image.open('Proyecto_Piura.jpg')
