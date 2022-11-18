@@ -28,12 +28,9 @@ st.markdown("""
 	* **Dato y Medio de Distribución:**
 	""")
 
-st.markdown("""https://www.datosabiertos.gob.pe/dataset/datos-hidrometereol%C3%B3gicos-gobierno-regional-piura/resource/897966b9-f582-4898-83fe
-
-               https://www.datosabiertos.gob.pe/dataset/datos-hidrometereol%C3%B3gicos-gobierno-regional-piura/resource/454e8897-4e25-486e-8291
-
-               https://www.datosabiertos.gob.pe/dataset/datos-hidrometereol%C3%B3gicos-gobierno-regional-piura/resource/d7437ef6-8950-4c25-bc91
-        """)
+st.markdown("""https://www.datosabiertos.gob.pe/dataset/datos-hidrometereol%C3%B3gicos-gobierno-regional-piura/resource/897966b9-f582-4898-83fe""")
+st.markdown("""https://www.datosabiertos.gob.pe/dataset/datos-hidrometereol%C3%B3gicos-gobierno-regional-piura/resource/454e8897-4e25-486e-8291""")
+st.markdown("""https://www.datosabiertos.gob.pe/dataset/datos-hidrometereol%C3%B3gicos-gobierno-regional-piura/resource/d7437ef6-8950-4c25-bc91""")
 
 st.markdown("""
 	* **Para mayor información también puede ingresar a:** http://servicios.regionpiura.gob.pe/datosh
