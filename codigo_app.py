@@ -84,6 +84,7 @@ opcion_dataset = st.selectbox(
     ('Ayabaca', 'Huancabamba','Morropón', 'Paita', 'Piura', 'Sechura', 'Sullana', 'Talara')
     )
 
-
+datos= pd.read_csv('DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv')
+st.dataframe(datos)
 
 
