@@ -1,7 +1,3 @@
-#$ pip install streamlit --upgrade
-
-
-
 import streamlit as st
 from bokeh.plotting import figure
 
