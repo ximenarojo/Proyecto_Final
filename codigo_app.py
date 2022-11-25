@@ -73,20 +73,20 @@ st.dataframe(c)
 st.subheader("Características del Dataset")
 st.write(c.describe())
 
+#para sacar datos
+datos= pd.read_csv('DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv')
+#st.dataframe(datos)
 
+df_anho_freq = pd.DataFrame(datos["PROVINCIA"].value_counts())
+st.bar_chart(df_anho_freq)
 st.header('Análisis exploratorio')
 
 # Seleccion del dataset
-st.subheader('Seleccionar los datos de las diferentes proviancias de Piura')
+st.subheader('Seleccionar los datos de las diferentes provincias de Piura')
 
 opcion_dataset = st.selectbox(
     '¿Qué dataset de las provincias de Piura deseas visualizar?',
     ('Ayabaca', 'Huancabamba','Morropón', 'Paita', 'Piura', 'Sechura', 'Sullana', 'Talara')
     )
 
-datos= pd.read_csv('DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv')
-st.dataframe(datos)
-
-df_anho_freq = pd.DataFrame(datos["PROVINCIA"].value_counts())
-st.bar_chart(df_anho_freq)
 
