@@ -8,9 +8,9 @@ df_ubigeo = pd.read_csv('TB_UBIGEOS.csv')
 
 @st.experimental_memo
 def load_data():
-    df_mapa= df_mapa.rename(columns={'LATITUD':'lat', 'LONGITUD':'lon'})
-    st.map(df_mapa[['lat','lon']])
-    )
+    df_ubigeo= df_ubigeo.rename(columns={'LATITUD':'lat', 'LONGITUD':'lon'})
+    st.map(df_ubigeo[['lat','lon']])
+    
     return df_mapa
 
 c = load_data()
