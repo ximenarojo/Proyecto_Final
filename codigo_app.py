@@ -92,3 +92,34 @@ opcion_dataset = st.selectbox(
     )
 
 
+df_visualizacion = None
+estado = '-'
+if opcion_dataset == 'Ayabaca':
+    df_visualizacion = df_aprobado
+    estado = 'Datos de la provincia de Ayabaca'
+elif opcion_dataset == 'Huancabamba':
+    df_visualizacion = df_desaprobado
+    estado = 'Datos de la provincia de Huancabamba'
+elif opcion_dataset == 'Morropón':
+    df_visualizacion = df_evaluacion
+    estado = 'Datos de la provincia de Morropón'
+elif opcion_dataset == 'Paita':
+    df_visualizacion = df_evaluacion
+    estado = 'Datos de la provincia de Paita'
+elif opcion_dataset == 'Paita':
+    df_visualizacion = df_desaprobado
+    estado = 'Datos de la provincia de Morropón'
+elif opcion_dataset == 'Piura':
+    df_visualizacion = df_evaluacion
+    estado = 'Datos de la provincia de Piura'
+elif opcion_dataset == 'Sechura':
+    df_visualizacion = df_evaluacion
+    estado = 'Datos de la provincia de Sechura'
+elif opcion_dataset == 'Sullana':
+    df_visualizacion = df_desaprobado
+    estado = 'Datos de la provincia de Sullana'
+elif opcion_dataset == 'Talara':
+    df_visualizacion = df_evaluacion
+    estado = 'Datos de la provincia de Talara'
+
+	
