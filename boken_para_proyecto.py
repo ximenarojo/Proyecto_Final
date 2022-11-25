@@ -6,8 +6,7 @@ import numpy as np
 
 
 
-df_ubigeO=pd.read_csv('TB_UBIGEOS.csv')
-
+df_ubigeo=pd.read_csv('TB_UBIGEOS.csv')
 
 
 st.map(df_ubigeo)
