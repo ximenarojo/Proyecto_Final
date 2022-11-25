@@ -77,6 +77,8 @@ st.write(c.describe())
 datos= pd.read_csv('DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv')
 #st.dataframe(datos)
 
+st.subheader('Conteo de datos en las diferente provincias de Piura')
+
 df_anho_freq = pd.DataFrame(datos["PROVINCIA"].value_counts())
 st.bar_chart(df_anho_freq)
 st.header('Análisis exploratorio')
