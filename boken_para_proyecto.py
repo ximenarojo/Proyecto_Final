@@ -6,10 +6,10 @@ import numpy as np
 
 
 
-df_ubigeo = pd.read_csv('TB_UBIGEOS.csv')
+df_ubigeO=pd.read_csv('TB_UBIGEOS.csv')
 
 
-df_ubigeo=df_ubigeo.rename(columns={'latitud':'lat', 'longitud':'lon'})
-st.map(df_ubigeo[['lat','lon']])
+
+st.map(df_ubigeo)
 
 
