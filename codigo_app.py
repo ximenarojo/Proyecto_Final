@@ -87,6 +87,6 @@ opcion_dataset = st.selectbox(
 datos= pd.read_csv('DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv')
 st.dataframe(datos)
 
-df_anho_freq = pd.DataFrame(df_visualizacion["PROVINCIA"].value_counts())
+df_anho_freq = pd.DataFrame(datos["PROVINCIA"].value_counts())
 st.bar_chart(df_anho_freq)
 
