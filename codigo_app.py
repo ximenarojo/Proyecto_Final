@@ -80,4 +80,11 @@ st.markdown("---")
 # Seleccion del dataset
 st.subheader('Seleccionar las provincias de Piura (Ayabaca, Huancabamba, Morropón, Paita, Piura, Sechura, Sullana o Talara)')
 
+opcion_dataset = st.selectbox(
+    '¿Qué dataset de las provincias de Piura deseas visualizar?',
+    ('Ayabaca', 'Huancabamba','Morropón', 'Paita', 'Piura', 'Sechura', 'Sullana', 'Talara')
+    )
+
+
+
 
