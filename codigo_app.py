@@ -74,3 +74,10 @@ st.subheader("Características del Dataset")
 st.write(c.describe())
 
 
+st.header('Análisis exploratorio')
+st.markdown("---")
+
+# Seleccion del dataset
+st.subheader('Seleccionar las provincias de Piura (Ayabaca, Huancabamba, Morropón, Paita, Piura, Sechura, Sullana o Talara)')
+
+
