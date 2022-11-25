@@ -75,10 +75,9 @@ st.write(c.describe())
 
 
 st.header('Análisis exploratorio')
-st.markdown("---")
 
 # Seleccion del dataset
-st.subheader('Seleccionar las provincias de Piura (Ayabaca, Huancabamba, Morropón, Paita, Piura, Sechura, Sullana o Talara)')
+st.subheader('Seleccionar los datos de las diferentes proviancias de Piura')
 
 opcion_dataset = st.selectbox(
     '¿Qué dataset de las provincias de Piura deseas visualizar?',
