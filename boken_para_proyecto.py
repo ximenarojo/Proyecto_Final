@@ -11,8 +11,8 @@ def load_data():
     df_mapa= df_mapa.rename(columns={'LATITUD':'lat', 'LONGITUD':'lon'})
     st.map(df_mapa[['lat','lon']])
     )
-    return df
+    return df_mapa
 
-df = load_data()
+c = load_data()
 
-st.map(df)
+st.map(c)
