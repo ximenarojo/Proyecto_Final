@@ -12,7 +12,9 @@ df_anho_freq = pd.DataFrame(df_visualizacion["region"].value_counts())
 st.bar_chart(df_anho_freq)
 
 
-df =  df_visualizacion.rename(columns={'latitud':'lat', 'longitud':'lon'})
+df_mapa=pd.read_csv('TB_UBIGEOS.csv')
+
+df =  df_mapa.rename(columns={'LATITUD':'lat', 'LONGITUD':'lon'})
 
 st.map(df)
 
