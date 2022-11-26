@@ -14,7 +14,7 @@ st.bar_chart(df_anho_freq)
 
 df_mapa=pd.read_csv('TB_UBIGEOS.csv')
 
-df =  df_mapa.rename(columns={'LATITUD':'lat', 'LONGITUD':'lon'})
+df =  df_mapa.rename(columns={'latitud':'lat', 'longitud':'lon'})
 
 st.map(df)
 
