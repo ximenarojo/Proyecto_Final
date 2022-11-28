@@ -92,10 +92,10 @@ opcion_dataset = st.selectbox(
     )
 
 #DATOS DE CADA PROVINCIA
-datos_Ayabaca= pd.read_xlsx('Ayabaca.xlsx')
-datos_Ayabaca= pd.read_csv('DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv')
-datos_Ayabaca= pd.read_csv('DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv')
-datos_Ayabaca= pd.read_csv('DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv')
+datos_Ayabaca= pd.read_csv('Ayabaca_Piura.csv')
+datos_Morropon= pd.read_csv('Morropon_Piura.csv')
+datos_Piura= pd.read_csv('Piura_Piura.csv')
+datos_Sullana= pd.read_csv('Sullana_Piura.csv')
 
 st.dataframe(datos_Ayabaca)
 
