@@ -91,6 +91,13 @@ opcion_dataset = st.selectbox(
     ('Ayabaca', 'Huancabamba','Morropón', 'Paita', 'Piura', 'Sechura', 'Sullana', 'Talara')
     )
 
+#DATOS DE CADA PROVINCIA
+datos_Ayabaca= pd.read_xlsx('Ayabaca.xlsx')
+datos_Ayabaca= pd.read_csv('DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv')
+datos_Ayabaca= pd.read_csv('DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv')
+datos_Ayabaca= pd.read_csv('DATOS_HIDROMETEREOLOGICOS_GORE_PIURA_2.csv')
+
+st.dataframe(datos_Ayabaca)
 
 df_visualizacion = None
 estado = '-'
