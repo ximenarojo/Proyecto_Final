@@ -114,14 +114,14 @@ elif opcion_dataset == 'Sullana':
     estado = 'Datos de la provincia de Sullana'
 
 #Con fé dá.
-t0 = '• Frecuencia de los proyectos '+estado+' según la clasificación TIPO' 
+t0 = estado 
 st.subheader(t0)
 st.dataframe(df_visualizacion)
 
 t1 = '• Frecuencia de los proyectos '+estado+' según la clasificación ACTIVIDAD'
 st.subheader(t1)
 st.markdown("##")
-df_actividad_freq = pd.DataFrame(df_visualizacion["ACTIVIDAD"].value_counts())
+df_actividad_freq = pd.DataFrame(df_visualizacion["DISTRITO"].value_counts())
 labels = df_actividad_freq.index.tolist()
 sizes = df_actividad_freq["DISTRITO"].tolist()
 fig1, ax1 = plt.subplots()
