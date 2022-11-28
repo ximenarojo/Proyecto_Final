@@ -88,7 +88,7 @@ st.subheader('Seleccionar los datos de las diferentes provincias de Piura')
 
 opcion_dataset = st.selectbox(
     '¿Qué dataset de las provincias de Piura deseas visualizar?',
-    ('Ayabaca', 'Huancabamba','Morropón', 'Paita', 'Piura', 'Sechura', 'Sullana', 'Talara')
+    ('Ayabaca','Morropon','Piura','Sullana')
     )
 
 #DATOS DE CADA PROVINCIA
@@ -97,36 +97,44 @@ datos_Morropon= pd.read_csv('Morropon_Piura.csv')
 datos_Piura= pd.read_csv('Piura_Piura.csv')
 datos_Sullana= pd.read_csv('Sullana_Piura.csv')
 
-st.dataframe(datos_Ayabaca)
-
 df_visualizacion = None
 estado = '-'
+
 if opcion_dataset == 'Ayabaca':
-    df_visualizacion = df_aprobado
+    df_visualizacion = datos_Ayabaca
     estado = 'Datos de la provincia de Ayabaca'
-elif opcion_dataset == 'Huancabamba':
-    df_visualizacion = df_desaprobado
-    estado = 'Datos de la provincia de Huancabamba'
 elif opcion_dataset == 'Morropón':
-    df_visualizacion = df_evaluacion
-    estado = 'Datos de la provincia de Morropón'
-elif opcion_dataset == 'Paita':
-    df_visualizacion = df_evaluacion
-    estado = 'Datos de la provincia de Paita'
-elif opcion_dataset == 'Paita':
-    df_visualizacion = df_desaprobado
+    df_visualizacion = datos_Morropon
     estado = 'Datos de la provincia de Morropón'
 elif opcion_dataset == 'Piura':
-    df_visualizacion = df_evaluacion
+    df_visualizacion = datos_Piura
     estado = 'Datos de la provincia de Piura'
-elif opcion_dataset == 'Sechura':
-    df_visualizacion = df_evaluacion
-    estado = 'Datos de la provincia de Sechura'
 elif opcion_dataset == 'Sullana':
-    df_visualizacion = df_desaprobado
+    df_visualizacion = datos_Sullana
     estado = 'Datos de la provincia de Sullana'
-elif opcion_dataset == 'Talara':
-    df_visualizacion = df_evaluacion
-    estado = 'Datos de la provincia de Talara'
+
+#Con fé dá.
+t0 = '• Frecuencia de los proyectos '+estado+' según la clasificación TIPO' 
+st.subheader(t0)
+st.dataframe(df_visualizacion)
+
+t1 = '• Frecuencia de los proyectos '+estado+' según la clasificación ACTIVIDAD'
+st.subheader(t1)
+st.markdown("##")
+df_actividad_freq = pd.DataFrame(df_visualizacion["ACTIVIDAD"].value_counts())
+labels = df_actividad_freq.index.tolist()
+sizes = df_actividad_freq["DISTRITO"].tolist()
+fig1, ax1 = plt.subplots()
+ax1.pie(sizes, labels=labels, autopct='%1.1f%%',
+startangle=0)
+#plt.title('Distribucion de datos segun ACTIVIDAD')
+ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+st.pyplot(fig1)
+st.write('Figura 1. Gráfica pie de los proyectos con la frecuencia según la ACTIVIDAD de proyecto.')
+
+t2 = '• Frecuencia de los proyectos '+estado+' según la clasificación TIPO' 
+st.subheader(t2)
+df_anho_freq = pd.DataFrame(df_visualizacion["region"].value_counts())
+st.bar_chart(df_anho_freq)
 
 	
