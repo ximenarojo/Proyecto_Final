@@ -118,6 +118,11 @@ t0 = estado
 st.subheader(t0)
 st.dataframe(df_visualizacion)
 
+t2 = '• Cantidad de estaciones según los '+estado+'' 
+st.subheader(t2)
+df_anho_freq = pd.DataFrame(df_visualizacion["ESTACION"].value_counts())
+st.bar_chart(df_anho_freq)
+
 t1 = '• Frecuencia de los proyectos '+estado+' según la clasificación ACTIVIDAD'
 st.subheader(t1)
 st.markdown("##")
@@ -132,9 +137,5 @@ ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 st.pyplot(fig1)
 st.write('Figura 1. Gráfica pie de los proyectos con la frecuencia según la ACTIVIDAD de proyecto.')
 
-t2 = '• Frecuencia de los proyectos '+estado+' según la clasificación TIPO' 
-st.subheader(t2)
-df_anho_freq = pd.DataFrame(df_visualizacion["region"].value_counts())
-st.bar_chart(df_anho_freq)
 
 	
