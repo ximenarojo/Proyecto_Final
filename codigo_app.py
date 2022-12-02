@@ -1,19 +1,22 @@
 #$ pip install streamlit --upgrade
 
-import streamlit as st
 import pandas as pd
 
 import plotly.express as px
 
 import numpy as np
-import altair as alt
-import urllib.request
-import base64
+import streamlit as st
 from datetime import datetime
 
 import matplotlib.pyplot as plt
 
 from PIL import Image
+
+#import altair as alt
+#import urllib.request
+#import base64
+
+
 
 st.title('Datos Hidrometereológicos Gobierno Regional Piura')
 
