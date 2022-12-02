@@ -8,6 +8,21 @@ import urllib.request
 import base64
 from PIL import Image
 
+import plotly.express as px
+from datetime import datetime
+import matplotlib.pyplot as plt
+
+# Librerias y modulos de ML, DA
+import sklearn as sk
+from sklearn.linear_model import LogisticRegression
+from sklearn import svm
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.neural_network import MLPClassifier
+
+# Excel
+from io import BytesIO
+from pyxlsb import open_workbook as open_xlsb
+
 st.title('Datos Hidrometereológicos Gobierno Regional Piura')
 
 st.markdown("""Esta pagina web "app" exploratoria permite visualizar a cualquier usuario los datos hidrometereológicos del Gobierno Regional de Piura""")
