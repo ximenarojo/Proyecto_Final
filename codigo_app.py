@@ -12,7 +12,7 @@ from datetime import datetime
 
 from PIL import Image
 
-#import altair as alt
+import altair as alt
 #import urllib.request
 #import base64
 
@@ -133,7 +133,7 @@ st.subheader(t2)
 df_anho_freq = pd.DataFrame(df_visualizacion["ESTACION"].value_counts())
 st.bar_chart(df_anho_freq)
 
-t3= '• Cantidad de precipitaciones diarias según los '+estado+'' 
+t3= '• Cantidad de caudal según los '+estado+'' 
 st.subheader(t3)
 df_precip_freq = pd.DataFrame(df_visualizacion["CAUDAL07H"].value_counts())
 st.line_chart(df_precip_freq)
@@ -142,17 +142,18 @@ st.line_chart(df_precip_freq)
 
 t1 = '• Frecuencia de los proyectos '+estado+' según la clasificación ACTIVIDAD'
 st.subheader(t1)
-st.markdown("##")
-df_actividad_freq = pd.DataFrame(df_visualizacion["DISTRITO"].value_counts())
-labels = df_actividad_freq.index.tolist()
-sizes = df_actividad_freq["DISTRITO"].tolist()
-fig1, ax1 = plt.subplots()
-ax1.pie(sizes, labels=labels, autopct='%1.1f%%',
-startangle=0)
-#plt.title('Distribucion de datos segun ACTIVIDAD')
-ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
-st.pyplot(fig1)
-st.write('Figura 1. Gráfica pie de los proyectos con la frecuencia según la ACTIVIDAD de proyecto.')
+source = pd.DataFrame(
+    {"category": ["a", "b", "c", "d", "e", "f"], "value": [4, 6, 10, 3, 7, 8]}
+)
+
+base = alt.Chart(source).encode(
+    theta=alt.Theta("value:Q", stack=True), color=alt.Color("category:N", legend=None)
+)
+
+pie = base.mark_arc(outerRadius=120)
+text = base.mark_text(radius=140, size=20).encode(text="category:N")
+
+pie + text
 
 
 	
