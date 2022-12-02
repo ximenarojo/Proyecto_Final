@@ -135,7 +135,7 @@ st.bar_chart(df_anho_freq)
 
 t3= '• Cantidad de precipitaciones diarias según los '+estado+'' 
 st.subheader(t3)
-df_precip_freq = pd.DataFrame(df_visualizacion["CAUDAL7H"].value_counts())
+df_precip_freq = pd.DataFrame(df_visualizacion["CAUDAL07H"].value_counts())
 st.line_chart(df_precip_freq)
 
 
