@@ -9,7 +9,7 @@ import base64
 from PIL import Image
 
 from datetime import datetime
-import matplotlib.pyplot as plt
+
 
 # Librerias y modulos de ML, DA
 import sklearn as sk
