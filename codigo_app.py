@@ -142,16 +142,11 @@ st.line_chart(df_precip_freq)
 
 t1 = '• Frecuencia de los proyectos '+estado+' según la clasificación ACTIVIDAD'
 st.subheader(t1)
-source = pd.DataFrame(df_visualizacion{"DISTRITO", "PROMEDIO24H"})
+source = pd.DataFrame(df_visualizacion[{"category": ["DISTRITO"], "value": ["PROMEDIO24H"]}])
 
-base = alt.Chart(source).encode(
-    theta=alt.Theta("PROMEDIO24H:Q", stack=True), color=alt.Color("DISTRITO:N", legend=None)
+alt.Chart(source).mark_arc(innerRadius=50).encode(
+    theta=alt.Theta(field="value", type="quantitative"),
+    color=alt.Color(field="category", type="nominal"),
 )
-
-pie = base.mark_arc(outerRadius=120)
-text = base.mark_text(radius=140, size=20).encode(text="DISTRITO:N")
-
-pie + text
-
 
 	
