@@ -138,6 +138,21 @@ st.subheader(t3)
 df_precip_freq = pd.DataFrame(df_visualizacion["CAUDAL07H"].value_counts())
 st.line_chart(df_precip_freq)
 
+t4 = '• Frecuencia de los proyectos '+estado+' según la clasificación ACTIVIDAD'
+st.subheader(t4)
+source = pd.DataFrame({"values": [12, 23, 47, 6, 52, 19]})
+
+base = alt.Chart(source).encode(
+    theta=alt.Theta("values:Q", stack=True),
+    radius=alt.Radius("values", scale=alt.Scale(type="sqrt", zero=True, rangeMin=20)),
+    color="values:N",
+)
+
+c1 = base.mark_arc(innerRadius=20, stroke="#fff")
+
+c2 = base.mark_text(radiusOffset=10).encode(text="values:Q")
+
+c1 + c2
 
 
 t1 = '• Frecuencia de los proyectos '+estado+' según la clasificación ACTIVIDAD'
