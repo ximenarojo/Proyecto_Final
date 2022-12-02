@@ -4,3 +4,6 @@ numpy==1.22.4
 streamlit-option-menu
 plotly
 matplotlib
+scikit-learn
+pyxlsb
+XlsxWriter
