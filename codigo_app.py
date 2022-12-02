@@ -12,7 +12,7 @@ from datetime import datetime
 
 
 # Librerias y modulos de ML, DA
-import sklearn as sk
+
 from sklearn.linear_model import LogisticRegression
 from sklearn import svm
 from sklearn.ensemble import RandomForestClassifier
