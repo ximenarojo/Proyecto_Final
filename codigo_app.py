@@ -10,13 +10,6 @@ from PIL import Image
 
 from datetime import datetime
 
-
-# Librerias y modulos de ML, DA
-
-from sklearn import svm
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.neural_network import MLPClassifier
-
 # Excel
 from io import BytesIO
 from pyxlsb import open_workbook as open_xlsb
