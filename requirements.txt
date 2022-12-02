@@ -1,0 +1,9 @@
+streamlit==1.13.0
+pandas==1.4.2
+numpy==1.22.4
+streamlit-option-menu
+plotly
+matplotlib
+#scikit-learn esto no lo estas usando no es necesario
+#pyxlsb tmp lo estas utilizando
+XlsxWriter #tmp
