@@ -103,7 +103,7 @@ estado = '-'
 if opcion_dataset == 'Ayabaca':
     df_visualizacion = datos_Ayabaca
     estado = 'Datos de la provincia de Ayabaca'
-elif opcion_dataset == 'Morropón':
+elif opcion_dataset == 'Morropon':
     df_visualizacion = datos_Morropon
     estado = 'Datos de la provincia de Morropón'
 elif opcion_dataset == 'Piura':
