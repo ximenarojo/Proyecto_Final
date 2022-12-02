@@ -135,8 +135,8 @@ st.bar_chart(df_anho_freq)
 
 t3= '• Cantidad de precipitaciones diarias según los '+estado+'' 
 st.subheader(t3)
-chart_data = pd.DataFrame(df_visualizacion["PRECIP24H"].value_counts()
-st.line_chart(chart_data)
+df_precip_freq = pd.DataFrame(df_visualizacion["PRECIP24H"].value_counts()
+st.line_chart(df_precip_freq)
 
 
 
