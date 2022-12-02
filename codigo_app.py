@@ -8,7 +8,6 @@ import urllib.request
 import base64
 from PIL import Image
 
-import plotly.express as px
 from datetime import datetime
 import matplotlib.pyplot as plt
 
