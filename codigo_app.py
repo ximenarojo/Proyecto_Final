@@ -133,6 +133,13 @@ st.subheader(t2)
 df_anho_freq = pd.DataFrame(df_visualizacion["ESTACION"].value_counts())
 st.bar_chart(df_anho_freq)
 
+t3= '• Cantidad de precipitaciones diarias según los '+estado+'' 
+st.subheader(t3)
+chart_data = pd.DataFrame(df_visualizacion["PRECIP24H"].value_counts()
+st.line_chart(chart_data)
+
+
+
 t1 = '• Frecuencia de los proyectos '+estado+' según la clasificación ACTIVIDAD'
 st.subheader(t1)
 st.markdown("##")
